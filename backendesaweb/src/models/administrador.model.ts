@@ -1,5 +1,6 @@
-import {model, property} from '@loopback/repository';
+import {model, property, hasOne} from '@loopback/repository';
 import {Persona} from '.';
+import {Restaurante} from './restaurante.model';
 
 @model()
 export class Administrador extends Persona {
@@ -16,6 +17,8 @@ export class Administrador extends Persona {
   })
   codigo: string;
 
+  @hasOne(() => Restaurante)
+  suRestaurante: Restaurante;
 
   constructor(data?: Partial<Administrador>) {
     super(data);

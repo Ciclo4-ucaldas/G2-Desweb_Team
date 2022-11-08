@@ -33,6 +33,10 @@ export class Restaurante extends Entity {
   })
   celular: string;
 
+  @property({
+    type: 'string',
+  })
+  administradorId?: string;
 
   constructor(data?: Partial<Restaurante>) {
     super(data);
