@@ -61,7 +61,7 @@
 											"top": 103,
 											"width": 58.53173828125,
 											"height": 13,
-											"text": "Personas"
+											"text": "Persona"
 										},
 										{
 											"_type": "LabelView",
@@ -2794,7 +2794,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Personas"
+					"name": "Persona"
 				},
 				{
 					"_type": "UMLClass",
