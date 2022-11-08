@@ -21,6 +21,10 @@ export class Menu extends Entity {
   })
   Precio: string;
 
+  @property({
+    type: 'string',
+  })
+  restauranteId?: string;
 
   constructor(data?: Partial<Menu>) {
     super(data);
