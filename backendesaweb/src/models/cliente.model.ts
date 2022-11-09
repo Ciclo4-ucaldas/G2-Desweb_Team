@@ -1,5 +1,6 @@
-import {model, property} from '@loopback/repository';
+import {model, property, belongsTo} from '@loopback/repository';
 import {Persona} from '.';
+import {Pedido} from './pedido.model';
 
 @model()
 export class Cliente extends Persona {
@@ -28,6 +29,8 @@ export class Cliente extends Persona {
   })
   Celular: string;
 
+  @belongsTo(() => Pedido, {name: 'susPedidos'})
+  pedidoId: string;
 
   constructor(data?: Partial<Cliente>) {
     super(data);

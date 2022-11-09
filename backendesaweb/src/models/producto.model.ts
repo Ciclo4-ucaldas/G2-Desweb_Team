@@ -1,4 +1,6 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, model, property, hasMany} from '@loopback/repository';
+import {Pedido} from './pedido.model';
+import {Menu} from './menu.model';
 
 @model()
 export class Producto extends Entity {
@@ -15,6 +17,21 @@ export class Producto extends Entity {
   })
   Tipo_producto: string;
 
+  @property({
+    type: 'string',
+  })
+  menuId?: string;
+
+  @property({
+    type: 'string',
+  })
+  pedidoId?: string;
+
+  @hasMany(() => Pedido)
+  elPedido: Pedido[];
+
+  @hasMany(() => Menu)
+  suMenu: Menu[];
 
   constructor(data?: Partial<Producto>) {
     super(data);
