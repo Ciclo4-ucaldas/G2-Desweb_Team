@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "password-generator": "^2.3.2"
+  }
+}

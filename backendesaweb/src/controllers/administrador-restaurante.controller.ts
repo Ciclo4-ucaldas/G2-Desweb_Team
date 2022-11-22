@@ -23,6 +23,7 @@ import {AdministradorRepository} from '../repositories';
 
 export class AdministradorRestauranteController {
   constructor(
+    
     @repository(AdministradorRepository) protected administradorRepository: AdministradorRepository,
   ) { }
 
