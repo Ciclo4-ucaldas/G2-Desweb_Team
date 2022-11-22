@@ -9,3 +9,7 @@ export * from './cliente-pedido.controller';
 export * from './pedido-cliente.controller';
 export * from './producto-pedido.controller';
 export * from './producto-menu.controller';
+export * from './administrador.controller';
+export * from './cliente.controller';
+export * from './menu.controller';
+export * from './producto.controller';
